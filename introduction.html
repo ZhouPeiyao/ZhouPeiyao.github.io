@@ -3,18 +3,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>周佩瑶的个人简历——Value_recon</title>
 <link type="text/css" rel="stylesheet" href="./css/detail_pt.css">
-
 <script src="./js/jquery-1.10.2.min.js"></script>
 <link href="./css/fotorama.css" rel="stylesheet">
 <script type="text/javascript" src="./js/fotorama.js"></script><style type="text/css"></style>
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="//apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
-<script>
-  $('img.lazy').lazyload({
-    // 可设置加载时的动画等属性
-    effect: 'fadeIn'
-  });
-</script>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.lazyload.js" type="text/javascript"></script>
 
 <style>
   .hide{
@@ -26,9 +19,6 @@
   .showprocess:hover{
     opacity:0.7;	
   }  
-  img.lazy{
-    width:1260;
-  }
 </style>
 
 </head>
@@ -39,15 +29,29 @@
   <!-- ************  page  ************** -->  
   <div class="page">
     <div id="page1">
-      <img class="lazy" src="./img/loading.png" data-original="./img/resume.jpg" width="1260" position:absolute">
-      <img class="lazy" src="./img/loading.png" data-original="./img/1.png" width="1260" position:absolute">
-      <img class="lazy" src="./img/loading.png" data-original="./img/2.png" width="1260" position:absolute">
-      <img class="lazy" src="./img/loading.png" data-original="./img/3.png" width="1260" position:absolute">
-      <img class="lazy" src="./img/loading.png" data-original="./img/4.png" width="1260" position:absolute">
-      <img class="lazy" src="./img/loading.png" data-original="./img/5.png" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/resume.jpg" width="1260">
+      <img class="lazy" src="./img/loading.png" data-original="./img/1.png" width="1260">
+      <img class="lazy" src="./img/loading.png" data-original="./img/2.png" width="1260">
+      <img class="lazy" src="./img/loading.png" data-original="./img/3.png" width="1260">
+      <img class="lazy" src="./img/loading.png" data-original="./img/4.png" width="1260">
+      <img class="lazy" src="./img/loading.png" data-original="./img/5.png" width="1260">
     </div>
   </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+  <script>
 
+   $(function() {
+    $("img.lazy").lazyload({
+     effect : "fadeIn",
+     container: $("#page1"),
+     threshold : -200
+     });
+    
+   });
+
+   </script>
   
                                                                                        
 

@@ -7,6 +7,15 @@
 <script src="./js/jquery-1.10.2.min.js"></script>
 <link href="./css/fotorama.css" rel="stylesheet">
 <script type="text/javascript" src="./js/fotorama.js"></script><style type="text/css"></style>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+<script>
+  $('img.lazy').lazyload({
+    // 可设置加载时的动画等属性
+    effect: 'fadeIn'
+  });
+</script>
+
 <style>
   .hide{
     display:none;
@@ -17,6 +26,9 @@
   .showprocess:hover{
     opacity:0.7;	
   }  
+  img.lazy{
+    width:1260;
+  }
 </style>
 
 </head>
@@ -27,9 +39,16 @@
   <!-- ************  page  ************** -->  
   <div class="page">
     <div id="page1">
-      <img src="./img/resume.jpg" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/resume.jpg" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/1.png" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/2.png" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/3.png" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/4.png" width="1260" position:absolute">
+      <img class="lazy" src="./img/loading.png" data-original="./img/5.png" width="1260" position:absolute">
     </div>
   </div>
+
+  
                                                                                        
 
 </body></html></center>
